@@ -3,20 +3,26 @@
 			return sum + current;
 		}, 0);
 
-		function MaxMin(array) {
-			maxElem = array[0];
-			minElem = array[0];
-			for (var i = 0; i < array.length; i++) {
-				if (maxElem < array[i]) {
-					maxElem = array[i];
-				}
-				if (minElem > array[i]) {
-					minElem = array[i];
+		function MaxMinReplace(arr) {
+			maxElem = arr[0];
+			minElem = arr[0];
+			var minIndex = 0;
+			var maxIndex = 0;
+			for (var i = 0; i < arr.length; i++) {
+				if (maxElem < arr[i]) {
+					maxElem = arr[i];
+					maxIndex = i;
+
+				} else if (minElem > arr[i]) {
+					minElem = arr[i];
+					minIndex = i;
 				}
 			}
-			return maxElem;
-			return minElem;
+			arr[maxIndex] = minElem;
+			arr[minIndex] = maxElem;
+			return arr;
 		}
 
-		MaxMin(arr);
-		alert("sum: " + result + ", max: " + maxElem + ", min: " + minElem);
+		MaxMinReplace(arr);
+		alert("sum: " + result + ", max: " + maxElem + ", min: " + minElem + ", replased array: " + arr);
+
