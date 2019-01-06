@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Star Wars Starships</title>
+  <link rel="stylesheet" href="homework8.css" type="text/css" media="screen" charset="utf-8">
+</head>
+<body>
+ <div class="container">
+    <header>
+      <img id="headerLogo"
+           src="images/logo.png" alt="Star Wars Logo">
+    </header>
+    <div class="all">
+    <h1 class="center">
+      Дізнайся все про зорельоти із Зоряних Війн.
+    </h1>
+      <p>
+        <label for="interactive">https://swapi.co/api/starships/</label><input id="interactive" type="text" placeholder="12/"><button>Дізнатися</button>
+      </p>
+      <small>Потрібна допомога? Просто введи цифру від 1 до 37 і знак "/" після неї. У тебе все вийде!</small>
+  <h2>Результат:</h2>
+  <div class="well">
+  <pre id="output" class="scrollable">{
+    {
+  "name": "X-wing",
+  "model": "T-65 X-wing",
+  "manufacturer": "Incom Corporation",
+  "cost_in_credits": "149999",
+  "length": "12.5",
+  "max_atmosphering_speed": "1050",
+  "crew": "1",
+  "passengers": "0",
+  "cargo_capacity": "110",
+  "consumables": "1 week",
+  "hyperdrive_rating": "1.0",
+  "MGLT": "100",
+  "starship_class": "Starfighter",
+  "pilots": [
+    "https://swapi.co/api/people/1/",
+    "https://swapi.co/api/people/9/",
+    "https://swapi.co/api/people/18/",
+    "https://swapi.co/api/people/19/"
+  ],
+  "films": [
+    "https://swapi.co/api/films/2/",
+    "https://swapi.co/api/films/3/",
+    "https://swapi.co/api/films/1/"
+  ],
+  "created": "2014-12-12T11:19:05.340000Z",
+  "edited": "2014-12-22T17:35:44.491233Z",
+  "url": "https://swapi.co/api/starships/12/"
+}
+</pre>
+<p class="xwing"></p>
+<div class="loading-bar"></div>
+  </div>
+</div>
+</div>
+      
+  <script type="text/javascript" src="homework8.js"></script>
+</body>
+</html>
